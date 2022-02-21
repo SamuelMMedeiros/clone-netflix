@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+    --cinza: #AAA;
+    --branco: #FFF;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Arial', serif;
+    color: var(--branco);
+}
+
+
+header{
+    padding: 10px;
+}
+header div.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container h2.logo{
+    color: var(--vermelho);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: var(--branco);
+
+}
+
+/* filme principal*/
+.container{
+    padding:0 30px;
+}
+.filme-principal{
+    font: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/house-of-cards-banner.jpg);
+    background-size: cover;
+    height:400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.filme-principal .container{
+    max-width: 70%;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    color:var(--branco);
+    border: none;
+    border-radius: 5px;
+
+    padding: 15px;
+    margin-right: 15px;
+    font: 12px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: .5s ease all;
+}
+.botao:hover{
+    background-color: var(--branco);
+    color: rgba(0,0,0,.50);;
+}
+.botao i{
+    margin-right: 5px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
